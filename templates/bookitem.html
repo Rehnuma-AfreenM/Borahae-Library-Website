@@ -1,0 +1,14 @@
+<div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 8px">
+  <div class="col-10">
+    <h4 style="color: rgb(100, 107, 90)">{{book["Book_name"]}}</h4>
+
+    <div><b>Author:</b> {{book["Author"]}}</div>
+
+    {% if "Price" in book %}
+    <div><b>Price</b> {{book["Price"]}}</div>
+    {% endif %}
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-success">Buy</button>
+  </div>
+</div>
